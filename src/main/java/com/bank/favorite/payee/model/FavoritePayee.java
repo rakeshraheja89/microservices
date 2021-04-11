@@ -1,31 +1,13 @@
-package com.interview.springboot.microservice.model;
+package com.bank.favorite.payee.model;
 
-import java.io.Serializable;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Table(name="BANK_FINANCE")
-public class BankFinance implements Serializable  {
+public class FavoritePayee   {
     /**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
-
-	@Id  
-    @Column 
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     
-    @Column(name="first_name")
     private String firstName;
     
-    @Column(name="last_name")
     private String lastName;
 
 	public long getId() {
@@ -69,7 +51,7 @@ public class BankFinance implements Serializable  {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		BankFinance other = (BankFinance) obj;
+		FavoritePayee other = (FavoritePayee) obj;
 		if (firstName == null) {
 			if (other.firstName != null)
 				return false;

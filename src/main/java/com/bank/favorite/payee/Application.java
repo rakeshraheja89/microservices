@@ -1,4 +1,4 @@
-package com.interview.springboot.microservice;
+package com.bank.favorite.payee;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
